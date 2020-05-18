@@ -117,7 +117,7 @@ nav a {
     
 }
 
-/* end */
+/* end Jim Header code */
 
 .top-content {
     display: flex;
@@ -160,6 +160,23 @@ nav a {
     justify-content: center;
 }
 
+/* Jim K. added code */
+
+#box1 { background-color: teal;}
+#box2 { background-color: gold;}
+#box3 { background-color: cadetblue;}
+#box4 { background-color: coral;}
+#box5 { background-color: crimson;}
+#box6 { background-color: forestgreen;}
+#box7 { background-color: darkorchid;}
+#box8 { background-color: hotpink;}
+#box9 { background-color: indigo;}
+#box10 { background-color: dodgerblue;}
+
+/* end */
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -191,4 +208,25 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/* ===== adding media querie =======*/
+
+@media (max-width: 500px){
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+    
+    .top-content .text-container {
+        width: 48%;
+        padding: 0 1%;
+        padding-bottom: 20px; 
+
+}
 }
