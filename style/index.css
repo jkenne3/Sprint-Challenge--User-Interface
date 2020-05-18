@@ -65,11 +65,59 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* ===== start coding ===== */ 
+
+
+
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+/* added by Jim Kennedy */
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+.first-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%; 
+    margin: 30px;
+}
+
+nav a {
+    width: 100%;
+    font-size:1rem;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: none;
+}
+
+.second-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main-image {
+    width: 100%;
+    
+}
+
+/* end */
 
 .top-content {
     display: flex;
