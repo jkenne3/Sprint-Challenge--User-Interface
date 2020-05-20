@@ -65,11 +65,64 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+/* ===== start coding ===== */ 
+
+HTML {
+    font-size: 62.5%;
+}
+
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
+
+/* ========================================================
+============= added by Jim Kennedy ======================*/
+
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+
+}
+
+.first-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%; 
+    margin: 30px;
+}
+
+nav a {
+    width: 100%;
+    font-size:1.5rem;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background: none;
+}
+
+.second-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#main-image {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 .top-content {
     display: flex;
@@ -112,6 +165,43 @@ p {
     justify-content: center;
 }
 
+/* Jim K. added code */
+
+#box1 { 
+    display: flex;
+    background-color: teal;}
+#box2 { 
+    display: flex;
+    background-color: gold;}
+#box3 { 
+    display: flex;
+    background-color: cadetblue;}
+#box4 { 
+    display: flex;
+    background-color: coral;}
+#box5 { 
+    display: flex;
+    background-color: crimson;}
+#box6 { 
+    display: flex;
+    background-color: forestgreen;}
+#box7 { 
+    display: flex;
+    background-color: darkorchid;}
+#box8 { 
+    display: flex;
+    background-color: hotpink;}
+#box9 { 
+    display: flex;
+    background-color: indigo;}
+#box10 { 
+    display: flex;
+    background-color: dodgerblue;}
+
+/* end */
+
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -120,6 +210,7 @@ p {
 
 .bottom-content .text-container {
     padding-right: 4%;
+    padding-left: 4%;
 }
 
 .bottom-content .text-container:last-child {
@@ -127,8 +218,10 @@ p {
 }
 
 footer {
+    display: flex;
     width: 100%;
     background: black;
+
 }
 
 footer nav {
@@ -143,4 +236,111 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/* ===============================================================================
+======================= adding media querie =======*/
+
+@media(max-width: 500px) {
+
+    .header {
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .first-header {
+        display: flex;
+        margin: 0 auto;
+        line-height: 0rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .first-header nav a {
+        display: flex;
+        font-size: 2.5rem;
+        flex-direction: column;
+    }
+
+    #main-image {
+        width: 100%;
+    }
+    
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+        font-size: 1.5rem;
+    }
+
+    .top-content .text-container {
+        font-size: 2rem;
+    }
+
+    .top-content .text-container h2 {
+        width: 100%;
+        font-size: 3.2rem;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .top-content .text-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 2.4rem;
+    }
+
+    .middle-content h2 {
+        display: flex;
+        width: 100%;
+        font-size: 3.2rem;
+        justify-content: center;
+    }
+  
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .bottom-content .text-container h2 {
+        font-size: 3.2rem;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 2.4rem;
+    }
+
+    nav a {
+        font-size: 2rem;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        line-height: 0rem;
+    }
+
+
 }
